@@ -13,6 +13,12 @@ const milla = 0.15
 
 const calcularVariablesCompagnia = (dias, millas, totalDolares) {
     if(dias && millas) {
-        return console.log('wheit a minute');
+        const total =  (dia*dias) + (milla*millas);
+        return console.log(`el total es ${total}`);
+    }
+
+    if (dias && totalDolares) {
+        const total = (totalDolares - (dia*dias)) / milla
+        return console.log(` se recorrieron ${total} millas`);
     }
 }
