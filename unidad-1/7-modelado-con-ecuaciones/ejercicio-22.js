@@ -15,5 +15,5 @@ function numeroMjsMes(total) {
     return console.log(`el numero de mensajes de este mes fue de ${resultado}`);
 }
 
-numeroMjsMes(38.5) // el numero de mensajes de este mes fue de 285 <-------- solucion
+numeroMjsMes(38.5) // el numero de mensajes de este mes fue de 1285 <-------- solucion
 numeroMjsMes(49.5) // el numero de mensajes de este mes fue de 1395 <--- test
