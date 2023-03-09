@@ -10,13 +10,19 @@ uno de los certificados paga 6% y el otro 4.5% de interes simple al agno.
 */
 
 const herencia = 100000
+const gananciaInvercion = 5025
 
 const invA = 0.06
 const invB = 0.045
-let x = invA*Number;
+
+let x = 0;
 
 let y = (herencia - x)
-console.log(x);
-console.log(typeof x);
-console.log(invA, invB);
-console.log(typeof invA, typeof invB);
+
+
+function interes() {
+    x = ((invB*(herencia) - gananciaInvercion)) / (invB - invA);
+    console.log(x);
+}
+
+interes() // 35000
