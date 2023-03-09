@@ -22,7 +22,9 @@ let y = (herencia - x)
 
 function interes() {
     x = ((invB*(herencia) - gananciaInvercion)) / (invB - invA);
-    console.log(x);
+    console.log(`se invirtio ${x} en el fondo A de 6% de interes`);
 }
 
-interes() // 35000
+interes() // se invirtio 35000 en el fondo A de 6% de interes
+
+// ahora hacer el ejercicio 25 del libro
