@@ -13,3 +13,5 @@ function areaJardin(areaTotal, anchoAndador) {
 }
 
 areaJardin(18000, 3) // 128
+
+// ahora realizar el ejercicio 49 del libro
