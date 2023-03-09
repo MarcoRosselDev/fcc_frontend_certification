@@ -8,9 +8,17 @@
 
 */
 
-console.log(20*15);//300 p2
-
 /* el perimetro es de 102
 
 -- 2 x a + 2 x b = 102
 */
+
+function marcoPintura(perimetro, altoPintura, anchoPintura) {
+    
+    const anchoCuadro = (-((2 * altoPintura) + (2 * anchoPintura) - perimetro) / 8)
+
+    console.log(`el ancho del marco del la pintura es de ${anchoCuadro} pulgadas`);
+
+}
+
+marcoPintura(102, 15, 20) // el ancho del marco del la pintura es de 4 pulgadas
