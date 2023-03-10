@@ -19,9 +19,9 @@ function trabajoEquipo(trabajadorA, trabajadorB) {
     if (resultado % 1 == 0) {
         console.log(`el trabajo en conjunto se realiza en ${resultado} horas`);
     } else {
-        console.log(`el trabajo en conjunto se raliza en ${Math.floor(resultado)} horasss`);
+        console.log(`el trabajo en conjunto se raliza en ${Math.round(resultado)} horas con ${Math.round((resultado % 1) * 60)} minutos`);
     }
 
 }
 
-trabajoEquipo(4, 6)
+trabajoEquipo(4, 6) // el trabajo en conjunto se raliza en 2 horas con 24 minutos
