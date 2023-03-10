@@ -12,3 +12,5 @@ function dimensionesLote(diferenciaLargo, area) {
 }
 
 dimensionesLote(8, 2900) // 50
+
+// ahora realizar el ejercicio 41 del libro
