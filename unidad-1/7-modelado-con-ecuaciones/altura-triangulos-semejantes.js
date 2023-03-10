@@ -16,3 +16,13 @@
     h/28 = 6/3.5
 
 */
+
+function altura(sombraA, sombraB, alturaB ) {
+    
+    const alturaA = (alturaB * sombraA) / sombraB;
+
+    console.log(`la altura del edificio es ${alturaA} pies`);
+
+}
+
+altura(28, 3.5, 6) // la altura del edificio es 48 pies
