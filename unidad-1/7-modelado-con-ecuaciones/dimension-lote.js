@@ -4,11 +4,11 @@
 
 */
 
-function dimensionesLote(area, variable) {
+function dimensionesLote(diferenciaLargo, area) {
     
-    const resultado = variable*(variable + 8) - area
+    const resultado = (-diferenciaLargo + (Math.sqrt(Math.pow(diferenciaLargo, 2) - 4 *(- area)))) / 2
 
     console.log(resultado);
 }
 
-dimensionesLote(2900, null)
+dimensionesLote(8, 2900) // 50
