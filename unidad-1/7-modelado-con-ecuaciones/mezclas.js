@@ -9,11 +9,14 @@
 */
 
 function jugoNatural(jugoInicial, porcentajeInicial, nuevoPorcentaje) {
+
     const cantidadInicial = porcentajeInicial * jugoInicial
     const cantidadNeta = jugoInicial * nuevoPorcentaje
     const resultado = (cantidadNeta - cantidadInicial) / (1- nuevoPorcentaje);
 
-    console.log(`prueba ${resultado}`);
+    console.log(`se deben agragar ${resultado} galones de jugo natural al 100%`);
 } 
 
-jugoNatural(900, 0.05, 0.1)
+jugoNatural(900, 0.05, 0.1) // se deben agragar 50 galones de jugo natural al 100%
+
+// ahora intente realizar el ejercicio 55 del libro.
