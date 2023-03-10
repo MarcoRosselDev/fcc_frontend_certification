@@ -25,3 +25,5 @@ function trabajoEquipo(trabajadorA, trabajadorB) {
 }
 
 trabajoEquipo(4, 6) // el trabajo en conjunto se raliza en 2 horas con 24 minutos
+
+// ahora intente ralizar el ejercicio 63
