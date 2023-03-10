@@ -8,3 +8,12 @@
 
 */
 
+function jugoNatural(jugoInicial, porcentajeInicial, nuevoPorcentaje) {
+    const cantidadInicial = porcentajeInicial * jugoInicial
+    const cantidadNeta = jugoInicial * nuevoPorcentaje
+    const resultado = (cantidadNeta - cantidadInicial) / (1- nuevoPorcentaje);
+
+    console.log(`prueba ${resultado}`);
+} 
+
+jugoNatural(900, 0.05, 0.1)
