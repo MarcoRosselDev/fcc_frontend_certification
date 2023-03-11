@@ -8,3 +8,15 @@
     ---> cuanto tiempo viajo Wendy en tren ?
 
 */
+
+function wendy(velocidadBus, velocidadTren, millasViaje, horasViaje) {
+    
+    const resultado = -((millasViaje - velocidadTren*horasViaje)/-(velocidadBus - velocidadTren))
+
+    const horasBus = resultado;
+    const horasTren = horasViaje - resultado
+
+    console.log(`Wendy viajo en tren ${horasTren} horas`);
+}
+
+wendy(40, 60, 300, 5.5) // Wendy viajo en tren 4 horas
