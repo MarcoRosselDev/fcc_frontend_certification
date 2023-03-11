@@ -25,3 +25,5 @@ function distanciaRapidezTiempo(distanciaViaje, rapidezExtra, horasViaje) {
 }
 
 distanciaRapidezTiempo(4200, 100, 13) // la rapidez del jet de Nueva York a Los Angeles fue de 600 Km/h
+
+// ahora intente realizar el ejericicio 69
