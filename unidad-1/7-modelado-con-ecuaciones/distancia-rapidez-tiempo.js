@@ -12,13 +12,16 @@ function distanciaRapidezTiempo(distanciaViaje, rapidezExtra, horasViaje) {
     
     const a = horasViaje;
     const b = (horasViaje * rapidezExtra) - (distanciaViaje * 2);
-    const c = distanciaViaje * rapidezExtra;
+    const c = -distanciaViaje * rapidezExtra;
 
+    
     console.log(a, b,c);
+    const discriminante = Math.sqrt((Math.pow(b, 2)) - (4*a*c));
+    console.log(discriminante);
 
-    const resultado = (-b + Math.sqrt(Math.pow(b, 2) - 4*a*c))/(2*a)
+    const resultado = (-b + discriminante )/(2*a)
 
-    console.log(`... ${resultado}`);
+    console.log(`la rapidez del jet de Nueva York a Los Angeles fue de ${resultado} Km/h`);
 }
 
-distanciaRapidezTiempo(4200, 100, 13)
+distanciaRapidezTiempo(4200, 100, 13) // la rapidez del jet de Nueva York a Los Angeles fue de 600 Km/h
