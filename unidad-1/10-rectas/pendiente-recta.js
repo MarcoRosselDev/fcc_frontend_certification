@@ -19,3 +19,5 @@ function pendiente(x1, y1, x2, y2) {
 pendiente(2, 1, 8, 5) // (2, 1) y Q(8, 5) es 0.6666666666666666
 
 // esto quiere decir que por cada unidad que nos movemos en x, se elevara 0.666 en el eje y
+
+// intenta realizar el ejercicio 9 del libro
