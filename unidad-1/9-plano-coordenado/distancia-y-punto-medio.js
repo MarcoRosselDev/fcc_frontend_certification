@@ -17,3 +17,10 @@
     |____________________________x
 
 */
+
+function formulaDistancia(xA, yA, xB, yB) {
+    const resultado = Math.sqrt(Math.pow(xB - xA, 2) + Math.pow(yB - yA, 2))
+    console.log(`la distancia es ${resultado}`);
+}
+
+formulaDistancia(1, -2, 5,3) // la distancia es 6.4031242374328485
