@@ -17,3 +17,5 @@ function poblacionConejos(poblacion8Meses) {
 
 poblacionConejos(4100)
 // la poblacion inicial el 646 y en un agnio se esperan 10336 conejos
+
+// ahora intente hacer el ejercicio 5 del libro
