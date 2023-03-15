@@ -8,3 +8,12 @@ b   estime la poblacion a un a;o despues de que los conejos fueron introducidos 
 
 */
 
+function poblacionConejos(poblacion8Meses) {
+    const conejosInicial = Math.round(poblacion8Meses/(Math.pow(2, 8/3)))
+    const poblacionEnUnAgnio = Math.round(conejosInicial*Math.pow(2, 12/3))
+    
+    console.log(`la poblacion inicial el ${conejosInicial} y en un agnio se esperan ${poblacionEnUnAgnio} conejos`);
+}
+
+poblacionConejos(4100)
+// la poblacion inicial el 646 y en un agnio se esperan 10336 conejos
