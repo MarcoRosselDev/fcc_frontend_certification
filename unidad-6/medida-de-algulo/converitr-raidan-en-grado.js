@@ -18,3 +18,5 @@ function radianGrados(radian) {
 }
 
 radianGrados((Math.PI/6)) // 30
+
+// ahora intenta hacer los ejercicios 5 y 17 del libro
