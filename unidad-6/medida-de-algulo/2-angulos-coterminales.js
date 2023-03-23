@@ -19,9 +19,11 @@ coterminalAngulo(30, -2) // -690
 coterminalAngulo(30, -3) // -1050
 
 function coterminalRadian(radian, multiplo) {
-    respuesta = radian + 2*Math.PI;
-    console.log(respuesta);
+    respuesta = radian + 2*Math.PI*multiplo;
+    console.log(`${respuesta} radianes`);
 }
 
-coterminalRadian(Math.PI/3, 2) // 7.330382858376184
-coterminalRadian(Math.PI/3, 3) // 7.330382858376184
+coterminalRadian(Math.PI/3, 2) // 13.61356816555577 radianes
+coterminalRadian(Math.PI/3, 3) // 19.896753472735355 radianes
+
+// ahora intenta realizar los ejercicios 29 y 31
