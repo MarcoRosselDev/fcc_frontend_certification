@@ -18,12 +18,17 @@ coterminalAngulo(30, 3) // 1110
 coterminalAngulo(30, -2) // -690
 coterminalAngulo(30, -3) // -1050
 
-function coterminalRadian(radian, multiplo) {
-    respuesta = radian + 2*Math.PI*multiplo;
-    console.log(`${respuesta} radianes`);
+function coterminalRadian(nominadorRadian, denominadorRadian ,multiplo) {
+    const pi = Math.PI;
+    const nominador = nominadorRadian + denominadorRadian*2*multiplo;
+    const solution = `${nominador} PI / ${denominadorRadian}  radianes`;
+
+    console.log(solution);
 }
 
-coterminalRadian(Math.PI/3, 2) // 13.61356816555577 radianes
-coterminalRadian(Math.PI/3, 3) // 19.896753472735355 radianes
+coterminalRadian(1, 3, 1) // 7 PI / 3  radianes
+coterminalRadian(1, 3, 2) // 13 PI / 3  radianes
+coterminalRadian(1, 3, -1) // -5 PI / 3  radianes
+coterminalRadian(1, 3, -2) // -11 PI / 3  radianes
 
 // ahora intenta realizar los ejercicios 29 y 31
