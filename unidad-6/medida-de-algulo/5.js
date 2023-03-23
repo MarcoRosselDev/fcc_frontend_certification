@@ -15,3 +15,36 @@
     16-   -150 grados
 
 */
+
+function gradosRadian(grados) {
+    result =  grados * (Math.PI/180)
+    console.log(result);
+}
+
+gradosRadian(15)
+gradosRadian(36)
+gradosRadian(54)
+gradosRadian(75)
+gradosRadian(-45)
+gradosRadian(-30)
+gradosRadian(100)
+gradosRadian(200)
+gradosRadian(1000)
+gradosRadian(3600)
+gradosRadian(-70)
+gradosRadian(-150)
+
+/* 
+0.2617993877991494
+0.6283185307179586
+0.9424777960769379
+1.3089969389957472
+-0.7853981633974483
+-0.5235987755982988
+1.7453292519943295
+3.490658503988659
+17.453292519943297
+62.83185307179586
+-1.2217304763960306
+-2.6179938779914944
+*/
