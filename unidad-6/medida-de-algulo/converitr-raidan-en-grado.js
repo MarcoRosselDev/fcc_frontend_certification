@@ -11,3 +11,10 @@ function gradosRadian(grados) {
 }
 
 gradosRadian(60) // 1.0471975511965976
+
+function radianGrados(radian) {
+    result = Math.round(radian * (180/Math.PI))
+    console.log(result);
+}
+
+radianGrados((Math.PI/6)) // 30
