@@ -17,3 +17,11 @@ coterminalAngulo(30, 2) // 750
 coterminalAngulo(30, 3) // 1110
 coterminalAngulo(30, -2) // -690
 coterminalAngulo(30, -3) // -1050
+
+function coterminalRadian(radian, multiplo) {
+    respuesta = radian + 2*Math.PI;
+    console.log(respuesta);
+}
+
+coterminalRadian(Math.PI/3, 2) // 7.330382858376184
+coterminalRadian(Math.PI/3, 3) // 7.330382858376184
