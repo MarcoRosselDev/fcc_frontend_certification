@@ -8,4 +8,4 @@ function coterminalAngulo(angulo, multiplo) {
 coterminalAngulo(135, 1) // 495
 coterminalAngulo(135, 2) // 855
 coterminalAngulo(135, -1) // -225
-coterminalAngulo(135, -2) // -58
+coterminalAngulo(135, -2) // -585
