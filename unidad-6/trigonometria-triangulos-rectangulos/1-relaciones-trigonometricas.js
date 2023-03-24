@@ -34,14 +34,17 @@ function realcionesTrigonometricas(hipotenusa, opuesto, adyacente) {
     cotangente = ${cotangente}
     `);
 }
-
-realcionesTrigonometricas(3, Math.sqrt(5), 2)
+const scrt5 = Math.sqrt(5)
+console.log(scrt5);
+realcionesTrigonometricas(3, 2, scrt5)
 
 /* 
-    seno = 0.7453559924999299
-    coseno = 0.6666666666666666
-    tangente = 1.118033988749895
-    cosecante = 1.3416407864998738
-    secante = 1.5
-    cotangente = 0.8944271909999159
+    seno = 0.6666666666666666
+    coseno = 0.7453559924999299
+    tangente = 0.8944271909999159
+    cosecante = 1.5
+    secante = 1.3416407864998738
+    cotangente = 1.118033988749895
  */
+
+// ahora intente ralizar el ejercicio 3 del libro
