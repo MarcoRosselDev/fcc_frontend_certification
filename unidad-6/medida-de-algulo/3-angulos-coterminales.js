@@ -13,5 +13,3 @@ function moduloCoterminal(angulo) {
 moduloCoterminal(1290) // 210
 
 // realizar el ejericio 41 del libro
-
-export default moduloCoterminal();

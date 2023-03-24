@@ -22,3 +22,8 @@ function areaSector(grados, radio, radianes) {
 }
 
 areaSector(60, 3,null) // 4.71238898038469 grados ^2
+
+// yo creo que se puede devolver algo mas limpio 
+// algo como una respuesta fraccionaria con PI radianes.
+
+// ahora hacer el ejercicio 63 del libro.
