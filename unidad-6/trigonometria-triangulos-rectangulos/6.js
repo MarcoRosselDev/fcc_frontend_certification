@@ -1,6 +1,6 @@
 /* 6        Encuentre los valores exactos de los seis realciones trigonometricas del angulo en el triangulo.
 
-hipotenusa = x
+hipotenusa = 17
 adyacente = 8
 opuesto = 15
 
@@ -23,3 +23,14 @@ function realcionesTrigonometricas(hipotenusa, opuesto, adyacente) {
     cotangente = ${cotangente}
     `);
 }
+
+realcionesTrigonometricas(17, 15,8)
+
+/* 
+    seno = 0.8823529411764706
+    coseno = 0.47058823529411764
+    tangente = 1.875
+    cosecante = 1.1333333333333333
+    secante = 2.125
+    cotangente = 0.5333333333333333
+*/
