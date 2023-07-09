@@ -1,8 +1,6 @@
 const http = require('http');
 const infoCursos = require('./cursos');
 
-console.log(infoCursos);
-
 const miPage = http.createServer((req, res)=>{
     const {method} = req;
 
@@ -19,8 +17,10 @@ function manejarSolicitudGET(req, res) {
     let path = req.url;
 
     if (path === "/") {
+        res.statusCode = 200;
         res.end(`Method GET and you're in home url`)
     } else if (path === "/courses") {
+        res.statusCode = 200;
         res.end(JSON.stringify(infoCursos));
     }
 }
