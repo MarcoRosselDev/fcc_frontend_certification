@@ -6,7 +6,7 @@ const server = http.createServer((req, res) =>{
     let {method} = req;
     console.log(method);
 
-    res.end();
+    res.end("some message");
 });
 
 PORT = 3001
