@@ -18,15 +18,31 @@ app.get('/api/cursos/matematicas', (req, res) =>{
     res.send(infoCursos.matematicas)
 })
 
+
+// cursos de programacion por nombre
 app.get('/api/cursos/programacion/:lenguaje', (req, res) => {
     const lenguaje = req.params.lenguaje;
-
+    
     const resultado = infoCursos.programacion.filter(curso => curso.lenguaje === lenguaje);
-
+    
     if (resultado.length === 0 ) {
-        return res.status(404).res.send("No se encontraron resultados");
+        return res.status(404).send(`No se encontraron cursos de ${lenguaje}`)
     }
+    
     res.send(JSON.stringify(resultado))
+    
+})
+
+// cursos de matematicas por nombre
+app.get('/api/cursos/matematicas/:tema', (req, res) => {
+    const temas = req.params.tema;
+    const resultados = infoCursos.matematicas.filter(tema => tema.tema === temas);
+
+    if (resultados === 0) {
+        return res.status(404).send(`No se encontraron cursos con el nombre ${temas}`);
+    }
+
+    res.send(JSON.stringify(resultados))
 
 })
 
