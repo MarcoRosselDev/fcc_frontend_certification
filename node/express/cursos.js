@@ -2,24 +2,24 @@ let infoCursos = {
     "programacion": [
         {
             id: 1,
-            titulo: "Aprende Python",
+            titulo: "aprende python",
             lenguaje: "python",
             vistas: 1405,
             nivel: "basico"
         },
         {
             id: 2,
-            titulo: "Aprende JavaScript",
+            titulo: "aprende JavaScript",
             lenguaje: "javaScript",
             vistas: 2105,
             nivel: "intermedio"
         },
         {
             id: 3,
-            titulo: "Aprende C++",
+            titulo: "aprende C++",
             lenguaje: "C++",
             vistas: 2963,
-            nivel: "Avanzado"
+            nivel: "avanzado"
         }
     ],
     "matematicas": [
@@ -39,10 +39,24 @@ let infoCursos = {
         },
         {
             id: 3,
+            titulo: "trigonometria",
+            tema: "trigonometria",
+            vistas: 1105,
+            nivel: "basico"
+        },
+        {
+            id: 4,
+            titulo: "trigonometria",
+            tema: "trigonometria",
+            vistas: 1105,
+            nivel: "abanzado"
+        },
+        {
+            id: 5,
             titulo: "algebra lineal",
             tema: "algebra",
             vistas: 1963,
-            nivel: "Avanzado"
+            nivel: "avanzado"
         }
     ]
 }
