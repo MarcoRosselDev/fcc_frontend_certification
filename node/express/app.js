@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
-const {infoCursos} = require('./cursos.js')
+const {infoCursos} = require('./datos/cursos.js')
 
 // Routers
-const routerProgramacion = express.Router();
+const routerMatematicas = require('./routers/matematicas.js');
+const routerProgramacion = require('./routers/programacion.js');
+
 app.use('/api/cursos/programacion', routerProgramacion);
 
-const routerMatematicas = express.Router();
 app.use('/api/cursos/matematicas', routerMatematicas);
 
 app.get('/', (req, res)=>{
@@ -16,55 +17,6 @@ app.get('/', (req, res)=>{
 app.get('/api/cursos', (req, res)=>{
     res.send(infoCursos)
 });
-
-// Programacion
-routerProgramacion.get('/', (req, res) =>{
-    res.send(infoCursos.programacion)
-});
-
-routerProgramacion.get('/:lenguaje', (req, res) => {
-    const lenguaje = req.params.lenguaje;
-    
-    const resultado = infoCursos.programacion.filter(curso => curso.lenguaje === lenguaje);
-    
-    if (resultado.length === 0 ) {
-        return res.status(404).send(`No se encontraron cursos de ${lenguaje}`)
-    }
-    
-    res.send(JSON.stringify(resultado))
-    
-})
-
-// Matematicas
-routerMatematicas.get('/', (req, res) =>{
-    res.send(infoCursos.matematicas)
-})
-
-// cursos de matematicas por nombre
-routerMatematicas.get('/:tema', (req, res) => {
-    const temas = req.params.tema;
-    const resultados = infoCursos.matematicas.filter(tema => tema.tema === temas);
-
-    if (resultados === 0) {
-        return res.status(404).send(`No se encontraron cursos con el nombre ${temas}`);
-    }
-    res.send(JSON.stringify(resultados))
-})
-
-// tema and materia at the same time
-routerMatematicas.get('/:tema/:nivel', (req, res) => {
-    const temas = req.params.tema;
-    const nivel = req.params.nivel;
-
-    const resultado = infoCursos.matematicas.filter(curso => curso.tema === temas && curso.nivel === nivel);
-
-    if (resultado == 0) {
-        return res.status(404).send(`no se encontraron cursos de ${temas} y de nivel ${nivel}`)
-    }
-
-    res.send(JSON.stringify(resultado));
-})
-
 
 const PUERTO = process.env.PORT || 3001;
 
