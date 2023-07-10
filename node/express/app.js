@@ -4,7 +4,10 @@ const {infoCursos} = require('./cursos.js')
 
 // Routers
 const routerProgramacion = express.Router();
-app.use('/api/cursos/programacion', routerProgramacion)
+app.use('/api/cursos/programacion', routerProgramacion);
+
+const routerMatematicas = express.Router();
+app.use('/api/cursos/matematicas', routerMatematicas);
 
 app.get('/', (req, res)=>{
     res.send('my first server with Express !')
@@ -33,25 +36,23 @@ routerProgramacion.get('/:lenguaje', (req, res) => {
 })
 
 // Matematicas
-app.get('/api/cursos/matematicas', (req, res) =>{
+routerMatematicas.get('/', (req, res) =>{
     res.send(infoCursos.matematicas)
 })
 
 // cursos de matematicas por nombre
-app.get('/api/cursos/matematicas/:tema', (req, res) => {
+routerMatematicas.get('/:tema', (req, res) => {
     const temas = req.params.tema;
     const resultados = infoCursos.matematicas.filter(tema => tema.tema === temas);
 
     if (resultados === 0) {
         return res.status(404).send(`No se encontraron cursos con el nombre ${temas}`);
     }
-
     res.send(JSON.stringify(resultados))
-
 })
 
 // tema and materia at the same time
-app.get('/api/cursos/matematicas/:tema/:nivel', (req, res) => {
+routerMatematicas.get('/:tema/:nivel', (req, res) => {
     const temas = req.params.tema;
     const nivel = req.params.nivel;
 
