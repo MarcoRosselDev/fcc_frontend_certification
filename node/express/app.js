@@ -18,6 +18,19 @@ app.get('/api/cursos/matematicas', (req, res) =>{
     res.send(infoCursos.matematicas)
 })
 
+app.get('/api/cursos/programacion/:lenguaje', (req, res) => {
+    const lenguaje = req.params.lenguaje;
+
+    const resultado = infoCursos.programacion.filter(curso => curso.lenguaje === lenguaje);
+
+    if (resultado.length === 0 ) {
+        return res.status(404).res.send("No se encontraron resultados");
+    }
+    res.send(JSON.stringify(resultado))
+
+})
+
+
 const PUERTO = process.env.PORT || 3001;
 
 app.listen(PUERTO, () => {

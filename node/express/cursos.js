@@ -3,14 +3,14 @@ let infoCursos = {
         {
             id: 1,
             titulo: "Aprende Python",
-            lenguaje: "Python",
+            lenguaje: "python",
             vistas: 1405,
             nivel: "basico"
         },
         {
             id: 2,
             titulo: "Aprende JavaScript",
-            lenguaje: "JavaScript",
+            lenguaje: "javaScript",
             vistas: 2105,
             nivel: "intermedio"
         },
@@ -25,22 +25,22 @@ let infoCursos = {
     "matematicas": [
         {
             id: 1,
-            titulo: "Calculo",
-            tema: "Calculo",
+            titulo: "calculo",
+            tema: "calculo",
             vistas: 1402,
             nivel: "basico"
         },
         {
             id: 2,
-            titulo: "Trigonometria",
-            tema: "Trigonometria",
+            titulo: "trigonometria",
+            tema: "trigonometria",
             vistas: 1105,
             nivel: "intermedio"
         },
         {
             id: 3,
-            titulo: "Algebra lineal",
-            tema: "Algebra",
+            titulo: "algebra lineal",
+            tema: "algebra",
             vistas: 1963,
             nivel: "Avanzado"
         }
