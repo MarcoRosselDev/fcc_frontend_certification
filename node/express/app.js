@@ -47,6 +47,21 @@ app.get('/api/cursos/matematicas/:tema', (req, res) => {
 })
 
 
+// tema and materia at the same time
+app.get('/api/cursos/matematicas/:tema/:nivel', (req, res) => {
+    const temas = req.params.tema;
+    const nivel = req.params.nivel;
+
+    const resultado = infoCursos.matematicas.filter(curso => curso.tema === temas && curso.nivel === nivel);
+
+    if (resultado == 0) {
+        return res.status(404).send(`no se encontraron cursos de ${temas} y de nivel ${nivel}`)
+    }
+
+    res.send(JSON.stringify(resultado));
+})
+
+
 const PUERTO = process.env.PORT || 3001;
 
 app.listen(PUERTO, () => {
