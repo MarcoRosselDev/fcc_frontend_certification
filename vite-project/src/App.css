@@ -1,0 +1,18 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#quote-box {
+  border: 2px solid rgba(209, 205, 206, 0.562);
+  border-radius: 18px;
+  padding: 30px;
+  max-width: 500px;
+  min-width: 250px;
+}
+#bottom-div {
+  display: flex;
+  justify-content: space-between;
+}
